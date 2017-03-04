@@ -4,8 +4,6 @@ import java.util.List;
 public class Server {
 	
 	public List<PM> availablePMs;
-	public int rejectedVMCounter;
-	public int allocatedVMCounter;
 	
 	public Server(int numberOfPMs, Float PMCpuCapacity, Float PMMemCapacity) {
 		this.availablePMs = new ArrayList<PM>();
@@ -13,5 +11,9 @@ public class Server {
 			this.availablePMs.add(new PM(PMCpuCapacity, PMMemCapacity));
 		}
 	};
+	
+	public List<PM> getAvailablePMs() {
+		return availablePMs;
+	}
 
 }

@@ -2,12 +2,17 @@ import java.util.List;
 
 public class FirstFit extends Fit {
 
+	public int allocatedVMCounter;
+	public int rejectedVMCounter;
+	
 	public FirstFit(List<PM> availablePMs) {
 		super(availablePMs);
+		allocatedVMCounter = 0;
+		rejectedVMCounter = 0;
 	}
 
 	@Override
-	void allocate(List<VM> virtualMachines) {
+	public void allocate(List<VM> virtualMachines) {
 		//First Fit: It is a greedy approach which scheduler considers the PMs sequentially,
 		//one by one, and places the VM to the first PM that has enough resources.
 		// TODO Auto-generated method stub
@@ -26,16 +31,21 @@ public class FirstFit extends Fit {
 					allocated = true;
 					break;
 				}
-				
 			}
 			if(allocated){
-				//incrementar numero de VMs alocadas
+				allocatedVMCounter++;
 			} else {
-				//incrementar numero de VMs recusadas
+				rejectedVMCounter++;
 			}
-		}
+		}	
+	}
 	
-		
+	public int getAllocatedVMCounter() {
+		return allocatedVMCounter;
+	}
+	
+	public int getRejectedVMCounter() {
+		return rejectedVMCounter;
 	}
 
 }
