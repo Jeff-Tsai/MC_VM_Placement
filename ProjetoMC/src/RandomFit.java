@@ -8,6 +8,7 @@ public class RandomFit extends Fit{
 
 	@Override
 	void allocate() {
+		// Random Fit: A random physical machine is chosen for placing the VM
 		// TODO Auto-generated method stub
 		
 	}
