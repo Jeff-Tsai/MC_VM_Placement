@@ -47,5 +47,10 @@ public class RandomFit extends Fit{
 		}	
 		
 	}
+	
+	@Override
+	public String getAlgorithmName() {
+		return "Random Fit";
+	}
 
 }

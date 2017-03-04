@@ -19,4 +19,5 @@ public abstract class Fit {
 	}
 	
 	abstract void allocate(List<VM> virtualMachines);
+	abstract String getAlgorithmName();
 }

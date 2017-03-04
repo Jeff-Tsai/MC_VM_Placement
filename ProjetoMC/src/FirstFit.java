@@ -38,12 +38,9 @@ public class FirstFit extends Fit {
 		}	
 	}
 	
-	public int getAllocatedVMCounter() {
-		return allocatedVMCounter;
-	}
-	
-	public int getRejectedVMCounter() {
-		return rejectedVMCounter;
+	@Override
+	public String getAlgorithmName() {
+		return "First Fit";
 	}
 
 }
