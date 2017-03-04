@@ -34,5 +34,12 @@ public class PM {
 	public void setAllocatedVMs(List<VM> allocatedVMs) {
 		this.allocatedVMs = allocatedVMs;
 	}
+	
+	public void allocateVirtualMachine(VM virtualMachine) {
+		allocatedVMs.add(virtualMachine);
+		
+		this.memCapacity -= virtualMachine.getMemoryReq();
+		this.cpuCapacity -= virtualMachine.getCpuReq();
+	}
 
 }

@@ -8,5 +8,5 @@ public abstract class Fit {
 		this.availablePMs = availablePMs;
 	}
 	
-	abstract void allocate();
+	abstract void allocate(List<VM> virtualMachines);
 }
