@@ -2,13 +2,10 @@ import java.util.List;
 
 public class FirstFit extends Fit {
 
-	public int allocatedVMCounter;
-	public int rejectedVMCounter;
+
 	
 	public FirstFit(List<PM> availablePMs) {
 		super(availablePMs);
-		allocatedVMCounter = 0;
-		rejectedVMCounter = 0;
 	}
 
 	@Override
@@ -33,9 +30,10 @@ public class FirstFit extends Fit {
 				}
 			}
 			if(allocated){
-				allocatedVMCounter++;
+				this.allocatedVMCounter++;
+				allocated = false;
 			} else {
-				rejectedVMCounter++;
+				this.rejectedVMCounter++;
 			}
 		}	
 	}
