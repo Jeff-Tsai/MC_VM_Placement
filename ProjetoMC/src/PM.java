@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class PM {
@@ -9,6 +10,7 @@ public class PM {
     public PM(Float cpuCapacity , Float memCapacity) {
     	this.cpuCapacity = cpuCapacity;
     	this.memCapacity = memCapacity;
+    	this.allocatedVMs = new ArrayList<VM>();
     }
 
 	public Float getCpuCapacity() {
