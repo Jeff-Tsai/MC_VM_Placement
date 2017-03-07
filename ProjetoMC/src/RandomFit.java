@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
@@ -16,7 +19,6 @@ public class RandomFit extends Fit{
 		for(int i = 0; i < virtualMachines.size(); i++) {
 			ArrayList<Integer> triedPMs = new ArrayList<Integer>();
 			VM virtualMachine = virtualMachines.get(i);
-			
 			Random rand = new Random();
 			int index = rand.nextInt(10);
 			
@@ -32,9 +34,16 @@ public class RandomFit extends Fit{
 					break;
 				}else {
 					triedPMs.add(index);
-					do {
+					ArrayList<Integer> sortedTriedFull = new ArrayList<Integer>(Arrays.asList(0,1,2,3,4,5,6,7,8,9)); 
+					//System.out.println(triedPMs.toString());
+					while(triedPMs.size()<10 && triedPMs.contains(index)) {
 						index = rand.nextInt(10);
-					}while(triedPMs.contains(index));
+					}
+					break;
+//					do {
+//						index = rand.nextInt(10);
+//						System.out.println(triedPMs.size());
+//					}while(triedPMs.size()<10 && triedPMs.contains(index)) ;
 				}
 			}
 			
