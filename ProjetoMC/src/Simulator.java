@@ -15,9 +15,10 @@ public class Simulator {
 	public static void main(String[] args) {
 		
 		
-		float MEM_CAP_OF_PM = Float.parseFloat(args[1]);
-		float CPU_CAP_OF_PM = Float.parseFloat(args[1]);
-		String type_of_VM = args[2];
+		final float MEM_CAP_OF_PM = Float.parseFloat(args[1]);
+		final float CPU_CAP_OF_PM = Float.parseFloat(args[1]);
+		final float SIZE_CPU_REQ = Float.parseFloat(args[2]);
+		final float SIZE_MEM_REQ = Float.parseFloat(args[3]);
 		int numberOfRequests = 0;
 
 		Server server = new Server(NUMBER_OF_PMS, CPU_CAP_OF_PM, MEM_CAP_OF_PM);
@@ -30,7 +31,7 @@ public class Simulator {
 		}
 
 		
-		String csvFile = "trace_reduzido.txt";
+		String csvFile = "task_reduzido2.txt";
         String line = "";
         String splitter = ",";
 
@@ -39,11 +40,13 @@ public class Simulator {
 
             while ((line = br.readLine()) != null) {
             	String[] params = line.split(splitter);
+                Float cpuReq = Float.parseFloat(params[6]);
+                Float memReq = Float.parseFloat(params[7]);
             	String type = params[8].replace("\"", "");
+            	
+//            	System.out.println(Float.parseFloat(cpuReq));
                 // use comma as separator
-            	if(type.equals(type_of_VM)) {
-                    Float cpuReq = Float.parseFloat(params[6]);
-                    Float memReq = Float.parseFloat(params[7]);
+            	if(cpuReq <= SIZE_CPU_REQ && memReq <= SIZE_MEM_REQ) {
                     VM newVM = new VM(cpuReq, memReq);
                     traceVMS.add(newVM);
                     numberOfRequests++;
@@ -58,10 +61,10 @@ public class Simulator {
 //		for (PM pm : server.availablePMs) {
 //			System.out.println(pm.getAllocatedVMs().toString());
 //		}
-        generateLog(server,fit, MEM_CAP_OF_PM, CPU_CAP_OF_PM, args[0], type_of_VM, numberOfRequests);
+        generateLog(server,fit, MEM_CAP_OF_PM, CPU_CAP_OF_PM, args[0], Float.toString(SIZE_CPU_REQ), Float.toString(SIZE_MEM_REQ), numberOfRequests);
 	}
 	
-	public static void generateLog(Server server, Fit fitAlgorithm, float memCap, float cpuCap, String fileName, String typeOfVM, int numberOfRequests) {
+	public static void generateLog(Server server, Fit fitAlgorithm, float memCap, float cpuCap, String fileName, String cpuReq, String memReq, int numberOfRequests) {
 		
 		Float memFragmentation = 0.0f;
 		Float cpuFragmentation = 0.0f;
@@ -92,7 +95,10 @@ public class Simulator {
 		    writer.append("Total CPU Fragmentation: " + memFragmentation + "\n");
 		    writer.append(s);
 
-		    writer.append("Type of VM requested: " + typeOfVM + "\n");
+		    writer.append("Size of CPU requested: " + cpuReq + "\n");
+		    writer.append(s);
+		    
+		    writer.append("Size of MEM requested: " + memReq + "\n");
 		    writer.append(s);
 
 		    writer.append("Total requests " + numberOfRequests + "\n");
