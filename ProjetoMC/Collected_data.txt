@@ -1,0 +1,384 @@
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 0.9007046
+
+Total CPU Fragmentation: 0.9007046
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.0125
+
+Total requests 590125
+
+Number of allocated VMs: 649
+
+Number of Rejected VMs: 589476
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 4.234459
+
+Total CPU Fragmentation: 4.234459
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.0125
+
+Total requests 889547
+
+Number of allocated VMs: 298
+
+Number of Rejected VMs: 889249
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 0.28996915
+
+Total CPU Fragmentation: 0.28996915
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.1925
+
+Total requests 888506
+
+Number of allocated VMs: 565
+
+Number of Rejected VMs: 887941
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 3.4368043
+
+Total CPU Fragmentation: 3.4368043
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.1925
+
+Total requests 3237690
+
+Number of allocated VMs: 179
+
+Number of Rejected VMs: 3237511
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 0.86031497
+
+Total CPU Fragmentation: 0.86031497
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.0125
+
+Total requests 590125
+
+Number of allocated VMs: 1474
+
+Number of Rejected VMs: 588651
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 8.4107
+
+Total CPU Fragmentation: 8.4107
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.0125
+
+Total requests 889547
+
+Number of allocated VMs: 339
+
+Number of Rejected VMs: 889208
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 0.08483391
+
+Total CPU Fragmentation: 0.08483391
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.1925
+
+Total requests 888506
+
+Number of allocated VMs: 931
+
+Number of Rejected VMs: 887575
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: First Fit
+
+Total Memory Fragmentation: 6.249073
+
+Total CPU Fragmentation: 6.249073
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.1925
+
+Total requests 3237690
+
+Number of allocated VMs: 290
+
+Number of Rejected VMs: 3237400
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 7.339375E-4
+
+Total CPU Fragmentation: 7.339375E-4
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.0125
+
+Total requests 590125
+
+Number of allocated VMs: 826
+
+Number of Rejected VMs: 589299
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 2.9552212
+
+Total CPU Fragmentation: 2.9552212
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.0125
+
+Total requests 889547
+
+Number of allocated VMs: 390
+
+Number of Rejected VMs: 889157
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 2.7284952E-4
+
+Total CPU Fragmentation: 2.7284952E-4
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.1925
+
+Total requests 888506
+
+Number of allocated VMs: 638
+
+Number of Rejected VMs: 887868
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 0.55
+
+CPU Capacity: 0.55
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 2.9915981
+
+Total CPU Fragmentation: 2.9915981
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.1925
+
+Total requests 3237690
+
+Number of allocated VMs: 206
+
+Number of Rejected VMs: 3237484
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 2.4148184E-4
+
+Total CPU Fragmentation: 2.4148184E-4
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.0125
+
+Total requests 590125
+
+Number of allocated VMs: 1740
+
+Number of Rejected VMs: 588385
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 6.419931
+
+Total CPU Fragmentation: 6.419931
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.0125
+
+Total requests 889547
+
+Number of allocated VMs: 526
+
+Number of Rejected VMs: 889021
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 1.8389331E-4
+
+Total CPU Fragmentation: 1.8389331E-4
+
+Size of CPU requested: 0.0125
+
+Size of MEM requested: 0.1925
+
+Total requests 888506
+
+Number of allocated VMs: 968
+
+Number of Rejected VMs: 887538
+
+
+Number of Phisical Machines available: 10
+PMs Settings: 
+
+Memory Capacity: 1.0
+
+CPU Capacity: 1.0
+
+Placement Algorithm: Random Fit
+
+Total Memory Fragmentation: 5.709984
+
+Total CPU Fragmentation: 5.709984
+
+Size of CPU requested: 0.1925
+
+Size of MEM requested: 0.1925
+
+Total requests 3237690
+
+Number of allocated VMs: 359
+
+Number of Rejected VMs: 3237331
+
+
